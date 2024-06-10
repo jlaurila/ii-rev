@@ -45,6 +45,7 @@ LD_PRELOAD=./mylibrary.so ./3 foo
 # 4 - system call - the password is not on local machine
 - strace
 - bypass with patching with Cutter
+- `echo -n "mysecretpassword" | nc -l -p 8080\`
 
 # key_check - anti debug
 - ltrace doesn't work due to anti debug
